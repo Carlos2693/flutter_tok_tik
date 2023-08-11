@@ -1,5 +1,7 @@
 ### ------------------------- Flutter.gitignore ------------------------ ###
-
+### Only for videos
+### https://www.pexels.com/search/videos/vertical/
+/assets/videos/
 # Miscellaneous
 *.class
 #*.lock
