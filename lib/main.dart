@@ -14,13 +14,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => DiscoverProvider())
+        ChangeNotifierProvider(create: (_) => DiscoverProvider()..loadNextPage())
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: AppTheme().getTheme(),
         title: 'TokTik',
-        home: DiscoverScreen(),
+        home: const DiscoverScreen(),
       ),
     );
   }
